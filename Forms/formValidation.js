@@ -20,7 +20,7 @@ function validateForm() {
     /*
         Cannot select multiply checkboxes
     */
-    if(mr === true && mrs === true || mr === true && mrs === true && ms === true || mr === false && mrs === false && ms === false){
+    if(mr === true && mrs === true || mr === true && mrs === true && ms === true || mr === false && mrs === false && ms === false || mr === true && ms=== true){
         alert("Error! Pick one vaild status");
         return false;
     }
