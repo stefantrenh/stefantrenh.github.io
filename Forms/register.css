@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Antonio', sans-serif;
+    background-color:#eee;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+body section{
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 3rem rgba(0,0,0,.2);
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+}

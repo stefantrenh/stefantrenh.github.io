@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp - JS bootcamp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Sign up Section-->
+    <section>
+        <header>
+            <h2>Sign up for JS bootcamp</h2>
+        </header>
+        <main>
+            <form action="account.html" name="signupForm" onsubmit="return validateForm()">
+                <label for="fname" >First Name:</label><br>
+                <input type="text" placeholder="Enter Firstname" id="fname" name="fname"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" placeholder="Enter Lastname" id="lname" name="lname"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" placeholder="Enter Email Adress" id="email" name="email"><br>
+                <label for="date">Birthdate:</label><br>
+                <input type="date" id="date" name="date"><br>
+                <input type="checkbox" id="status1" name="Mr.">
+                <label for="checkbox">Mr.</label>
+                <input type="checkbox" id="status2" name="Ms.">
+                <label for="checkbox">Ms.</label>
+                <input type="checkbox" id="status3" name="Mrs.">
+                <label for="checkbox">Mrs.</label><br><br>
+                <button type="submit" id="signup">Register now</button>
+            </form>
+        </main>
+    </section>
+    <script src="formValidation.js"></script>
+</body>
+</html>
