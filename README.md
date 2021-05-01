@@ -1,5 +1,7 @@
-FORMS
+Welcome To My github.io
 
-HTML5 , CSS3, Javascript
+I will post project and fun games here! 
 
-Form validation and playing with URLSearchParam class
+I hope you enjoy it!
+
+Regards , Stefan Trenh
