@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  background-color: #eee;
+  font-family: 'Amatic SC', cursive;
+}
+
+.wrapper{
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/*Game Area starts*/
+.memory-game {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#MG{
+  font-size: 8rem;
+  font-family: 'Amatic SC', cursive;
+}
+
+#result{
+  font-size: 3rem;
+}
+.memory-table {
+  display: flex;
+  width: 980px;
+  height: 1150px;
+  flex-wrap: wrap;
+}
+.memory-card{
+  margin: 0.25rem;
+  height: 153px;
+  width: 153px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-image: url(img/blank.jpg);
+}
+
+
+
+.memory-card img:hover {
+  background-color: #666;
+}
+
+/*Game Area Ends*/
+
+
+body section footer {
+  margin-top: 3rem;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color:white;
+}
+.linkedin{
+  height: 100px;
+  padding: 10px;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.linkedin:hover { opacity: 0.6;}
+.github:hover {  opacity: 0.6; }
+.github{
+  height: 120px;
+  padding: 10px;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.links{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(20, 62, 139);
+}
+
+body section footer h2,body section footer h3{
+  margin: 0.8rem 0rem;
+}
+
+.st {
+  margin: 1.5rem;
+}
+
+body section footer header {
+
+  padding: 2rem 0rem;
+  background-color: rgb(60, 102, 180);
+}
+
+body section footer aside {
+  background-color: rgb(20, 62, 139);
+  padding: 2rem 0rem;
+}
+
+body section footer aside a:hover{
+  color:rgb(114, 114, 236);
+}
+
+.footer-aside__dev1{
+  display: flex;
+  margin: 0 0 0 10rem;
+  padding: 1rem;
+  flex-direction: column;
+  flex: 0.5;
+}
+.footer-aside__dev2{
+  display: flex;
+  padding: 1rem;
+  margin: 0 10rem 0 0;
+  flex-direction: column;
+  flex: 0.5;
+}
+
+
+
+
+
