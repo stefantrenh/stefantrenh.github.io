@@ -126,7 +126,6 @@ body section footer aside a:hover{
   flex: 0.5;
 }
 
-
 @media only screen and (max-width: 600px) {
   .memory-card{
     height: 100px;
@@ -136,6 +135,7 @@ body section footer aside a:hover{
     display: flex;
     width: 600px;
     height: 850px;
+    margin-right:2rem;
   }
 }
 
@@ -156,4 +156,7 @@ body section footer aside a:hover{
     margin:none;
   }
 }
+
+
+
 
