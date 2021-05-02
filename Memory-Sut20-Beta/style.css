@@ -130,12 +130,30 @@ body section footer aside a:hover{
   .memory-card{
     height: 100px;
     width: 100px;
+    background-repeat: no-repeat;   
+    background-size: cover;
   }
   .memory-table {
     display: flex;
     width: 600px;
     height: 850px;
     margin-right:2rem;
+  }
+  .linkedin{
+    height: 70px;
+  }
+  .github{
+    height: 80px;
+  }
+  .footer-aside__dev1 {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-aside__dev2 {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -144,6 +162,8 @@ body section footer aside a:hover{
   .memory-card{
     height: 100px;
     width: 100px;
+    background-repeat: no-repeat;   
+    background-size: cover;
   }
   .memory-table {
     display: flex;
@@ -154,6 +174,22 @@ body section footer aside a:hover{
   .wrapper{
     max-width: 900px;
     margin:none;
+  }
+  .linkedin{
+    height: 70px;
+  }
+  .github{
+    height: 80px;
+  }
+  .footer-aside__dev1 {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-aside__dev2 {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
   }
 }
 
