@@ -139,3 +139,21 @@ body section footer aside a:hover{
   }
 }
 
+
+@media only screen and (max-width: 736px) {
+  .memory-card{
+    height: 100px;
+    width: 100px;
+  }
+  .memory-table {
+    display: flex;
+    margin-left: 2rem;
+    width: 330px;
+    height: 1450px;
+  }
+  .wrapper{
+    max-width: 900px;
+    margin:none;
+  }
+}
+
