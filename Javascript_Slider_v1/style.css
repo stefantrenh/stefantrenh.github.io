@@ -7,18 +7,15 @@
     height: 100vh;
     display: flex;
 }
-
 #sliders img{
     width: 1920px;
     height: 100vh;
     position: absolute;
 }
-  
 .content {
     position: absolute;
     width: 100%;
 }
-
 content image{
     width: 100%;
 }
