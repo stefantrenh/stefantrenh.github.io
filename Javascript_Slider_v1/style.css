@@ -2,17 +2,16 @@
     margin:0;
     padding:0;
 }
-#slider {
+#sliders {
     width: 1920px;
     height: 100vh;
     display: flex;
 }
 
-#slider img{
+#sliders img{
     width: 1920px;
     height: 100vh;
-    display: flex;
-
+    position: absolute;
 }
   
 .content {
