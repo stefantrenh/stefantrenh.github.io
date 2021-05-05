@@ -6,7 +6,7 @@ let count = 0;
 //console.log(slides[0].getElementsByTagName('img')[0])
 let acceptCookies = false;
 
-/*some GDPR shit confirm... windows.confirm much batter choice than alert, cuz i am lazy and dont want to design*/
+/*some GDPR confirm... windows.confirm much batter choice than alert, cuz i am lazy and dont want to design*/
 let answer = window.confirm("We are using cookies to store image data, do you wish to enable cookies");
 if (answer) {
     acceptCookies = true;
