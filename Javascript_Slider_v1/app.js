@@ -1,81 +1,80 @@
+let imgArray = [
+    {image: "Picture of Sea"
+    , src: "img/sea.jpg"},
+    {image: "Picture of Coding"
+    , src: "img/code.png"},
+    {image: "Picture of Computer"
+    , src: "img/computer.jpg"},
+    {image: "Picture of Link"
+    , src: "https://live.staticflickr.com/122/316423477_6cbdb14722_h.jpg"}
+]
 
-/*Getting slides object array of childrens*/
-let slides = document.getElementById("slider").children;
-let count = 0;
+let count = -1;
+let sliders = document.querySelectorAll(".slider");
 
-//console.log(slides[0].getElementsByTagName('img')[0])
-let acceptCookies = false;
+getImg();
 
-/*some GDPR confirm... windows.confirm much batter choice than alert, cuz i am lazy and dont want to design*/
-let answer = window.confirm("We are using cookies to store image data, do you wish to enable cookies");
-if (answer) {
-    acceptCookies = true;
+function getImg ()
+{
+    for (let i = 0; i < sliders.length; i++) {
+        let imgElement = document.createElement("img");
+        imgElement.setAttribute("src", imgArray[i].src);
+        imgElement.setAttribute("alt", imgArray[i].image);
+        sliders[i].appendChild(imgElement);
+     }
 }
-else {
-    acceptCookies = false;
-}
+
+     let imageCookie1 = sliders[0].getElementsByTagName('img')[0].getAttribute("src")
+     let imageCookie2 = sliders[1].getElementsByTagName('img')[0].getAttribute("src")
+     let imageCookie3 = sliders[2].getElementsByTagName('img')[0].getAttribute("src")
+     let imageCookie4 = sliders[3].getElementsByTagName('img')[0].getAttribute("src")
+
+    /*some GDPR confirm... windows.confirm much batter choice than alert, cuz i am lazy and dont want to design*/
+    let answer = window.confirm("We are using cookies to store image data, do you wish to enable cookies");
+    if (answer) {
+        acceptCookies = true;
+    }
+    else {
+        acceptCookies = false;
+    }
+
 slider();
 
 function slider() {
-
-/*Getting Alt attributes from img as values */
-let imageCookie1 = slides[0].getElementsByTagName('img')[0].getAttribute("alt")
-let imageCookie2 = slides[1].getElementsByTagName('img')[0].getAttribute("alt")
-let imageCookie3 = slides[2].getElementsByTagName('img')[0].getAttribute("alt")
-
-/*Datetime now + set 24 hours, 1 day*/
-let now = new Date();
-now.setHours(now.getHours() + 24);
-
-//console.log(imageCookie1)
-//console.log(imageCookie2)
-//console.log(imageCookie3)
-
-/*
-    Solution of slider
-    Displayig all styles in CSS to display none in a loop
-    Stores a cookie from the variables below + one day sessions
-    added a counter to track the image flow
-    reset counter on last
-    calling the slider again on setTimeout to create a "While Loop"
-*/
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].getElementsByTagName('img')[0].style.display = "none";
-    
-    }
-    if (count == 0){
-        slides[0].getElementsByTagName('img')[0].style.display = "block";
+    count++;
+    /*Datetime now + set 24 hours, 1 day*/
+    let now = new Date();
+    now.setHours(now.getHours() + 24);   
+    if (count == 1){
         if(acceptCookies){
-            document.cookie = "name = " + imageCookie1 + ";" +   "expires = " + now.toUTCString() +";";
+            document.cookie = "name = " + imageCookie4 + ";" +   "expires = " + now.toUTCString() +";";
         }
-
-        count++;
+        let parent = sliders[3];
+        parent.removeChild(parent.firstChild);
     }
-    else if (count == 1){
-        slides[0].getElementsByTagName('img')[0].style.display = "none";
-        slides[1].getElementsByTagName('img')[0].style.display = "block";
+    else if (count == 2){
         if(acceptCookies){
-        document.cookie = "name = " + imageCookie2 + ";" +  " expires = " + now.toUTCString() +";";
+        document.cookie = "name = " + imageCookie3 + ";" +  " expires = " + now.toUTCString() +";";
         }
-        count++;
+        let parent = sliders[2];
+        parent.removeChild(parent.firstChild);
     }
-    else if  (count == 2){
-        slides[1].getElementsByTagName('img')[0].style.display = "none";
-        slides[2].getElementsByTagName('img')[0].style.display = "block";
+    else if  (count == 3){
         if(acceptCookies){
-        document.cookie = "name = " + imageCookie3 + ";" + " expires = " + now.toUTCString() +";";
+        document.cookie = "name = " + imageCookie2 + ";" + " expires = " + now.toUTCString() +";";
         }
+        let parent = sliders[1];
+        parent.removeChild(parent.firstChild);
+    }
+    else if  (count == 4){
+        if(acceptCookies){
+        document.cookie = "name = " + imageCookie1 + ";" + " expires = " + now.toUTCString() +";";
+        let parent = sliders[0];
+        parent.removeChild(parent.firstChild);
+        getImg();
         count = 0;
+        }
     }
     setTimeout(slider, 3000);
 }
-
-
-//slideImages[0].getElementsByTagName('img')[0].style.display = "none";
-
-
-
-
-
-
-
+    
