@@ -11,11 +11,11 @@
 .sliders img{
     width: 1920px;
     height: 100vh;
-    position: absolute;
+    {position: absolute;}
 }
   
 .content {
-    position: absolute;
+    {position: absolute;}
     width: 100%;
 }
 
