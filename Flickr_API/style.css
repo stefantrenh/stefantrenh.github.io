@@ -202,6 +202,7 @@ footer aside h1 {
 
     #section-header__searchForm{
         padding-right: 0.2rem;
+        margin-left: 3rem;
     }
   
     
@@ -236,10 +237,12 @@ footer aside h1 {
 
     #main {
         margin: 0 0 0rem 2rem;
+        height: 55vh;
     }
 
     #main img{
-        width: 75px;
+        width: 70px;
+        height: 70px;
     }
 
     #section-btn__rightbtn{
@@ -266,13 +269,23 @@ footer aside h1 {
         padding: 0.5rem 1rem;
     }
 
-}
-@media only screen and (max-width: 970px) and (min-width: 770px){
-    #main {
-        margin:0 0 0 1.8rem;
-        height: 100vh;
+    footer aside h1 {
+        font-size: 2rem;
     }
+    #footer-aside__contactInfo p{
+        font-size: 0.6rem;
+        margin: 0.2rem;
+    }
+    footer aside a{
+        font-size: 0.8rem;
+    }
+    footer {
+        height: 18vh;
+    }
+
+
 }
+
 
 /*Tablet responsive*/
 @media only screen and (max-width: 770px) and (min-width: 600px){
@@ -304,14 +317,39 @@ footer aside h1 {
 /*small small phones ?*/
 @media only screen and (max-width: 320px) 
 {
+
     .wrapper{
         margin: 0;
     }
     #main {
-        margin: 0 0 0 2rem;
+        margin: 0 0 0 1rem;
+        height: 56vh;
+    }
+    #main img{
+        height: 65px;
+        width: 65px;
     }
     body section {
-        width: 400px;
+        width: 320px;
+    }
+    #section-header__searchForm{
+     margin-left: 1rem;
+    }
+    #section-header__title{
+        display: none;
+    }
+    footer aside h1 {
+        font-size: 2rem;
+    }
+    #footer-aside__contactInfo p{
+        font-size: 0.6rem;
+        margin: 0.2rem;
+    }
+    footer aside a{
+        font-size: 0.8rem;
+    }
+    footer {
+        height: 18vh;
     }
 
 }
