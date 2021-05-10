@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flickr API - Stefan Trenh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Raleway:ital,wght@0,600;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <section>
+            <!--HEADER SECTION-->
+            <header>
+                <h1 id="section-header__title">Trenh Tech Flickr API</h1>
+                <h1 id="section-header__mobile">TTech</h1>
+                <form id="section-header__searchForm">
+                    <input type="text" id="section-header__searchBar" name="searchBar" placeholder="Photos, people, or groups"> 
+                    <button type="button" id="section-header__btn" onclick="searchBtn()">Search</button>
+                </form>
+            </header>
+
+            <!--SEARCH OUTPUT SECTION SECTION-->
+            <h2><span id="section-searchInput"></span></h2>
+
+            <!--MAIN SECTION WHERE IMAGES LOADS-->
+            <main id="main"></main>
+
+            <!--PREVIOUS AND NEXT SECTION-->
+            <div id="section-btn">
+                <button id="section-btn__leftbtn" onclick="PreviousPageBtn()">
+                    <img src="img/arrow-pointing-to-left.svg" class="section-btn__img">
+                    Previous 
+                </button> 
+                <p><span id="section-btn__pages"></span></p>
+                <button id="section-btn__rightbtn" onclick="NextPageBtn()">
+                    Next 
+                    <img src="img/arrow-pointing-to-right.svg" class="section-btn__img">        
+                </button>
+            </div>
+
+            <!--MODAL SECTION-->
+
+            <div id="modal-bg">
+                <div id="modal">
+                    <img src="img/Warning.svg" id="warning">
+                    <h1>Cannot enter page</h1>
+                    <button id="modal-btn" onclick="modalCloseBtn()">Close</button>
+                </div>
+            </div>
+            <!--FOOTER SECTION-->
+            <footer>
+                <aside>
+                        <div id="footer-aside__contactInfo">
+                            <h1>Contact Info</h1>
+                            <p>Trenh Tech AB</p>
+                            <p>Tel: 0340-XXX XXX</p>
+                            <p>Gravaregatan 22</p>
+                            <p>432 45 Varberg</p>
+                            <p>Halland - Sweden</p>
+                        </div>
+                        <a href="mailto:info@stefantrenh.com">info@stefantrenh.com</a>
+                </aside>
+            </footer>
+        </section>
+    </div>
+</body>
+<script src="flickrApi.js"></script>
+</html>

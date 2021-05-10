@@ -1,0 +1,317 @@
+body{
+    margin: 0;
+    background-color: #eee;
+    font-family: 'Raleway', sans-serif;
+}
+.wrapper{
+    max-width: 1000px;
+    margin:auto;
+}
+
+section{
+    background-color: white;
+}
+/* HEADER SECTION */
+
+#section-header__mobile{
+    display:none;
+}
+section header {
+    height: 10vh;
+    background-color: rgb(39, 74, 102);
+    display:flex;
+}
+
+#section-header__title {
+   display: flex;
+   align-items: center;
+   margin-right: auto;
+   padding-left: 3rem;
+   color:white;
+   font-family: 'Damion', cursive;
+   font-size: 2.3rem;
+}
+
+#section-header__searchForm{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-right: 3rem;
+}
+
+#section-header__searchBar {
+    padding: 0.5rem 1rem;
+    font-size: large;
+}
+
+#section-header__btn{
+    border: none;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem;
+    font-size: large;
+    border-radius: 1rem;
+}
+
+#section-header__btn:hover {
+    background-color:rgb(31, 61, 85);
+    color:white;
+}
+
+/*HEADER ENDS*/
+
+/* MODAL WINDOW ON NEXT AND PREVIOUS BTN BEGIN */
+
+#warning{
+    width: 12rem;
+    margin: 0;
+}
+#modal-bg{
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    left: 0; /* pos left n right */
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#modal {
+        background-color: #fefefe;
+        margin: auto;
+        margin-top: 7rem;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%;
+}
+#modal-bg h1{
+    margin:0;
+}
+#modal-btn{
+    padding: 0.5rem 3rem;
+    font-size: medium;
+    margin: 0.5rem 0 0 0;
+}
+
+/* MODAL WINDOW ENDS */
+
+/*MAIN AND BTN SECTIONS*/
+#main {
+    height:75vh;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0 0 2rem 2rem;
+}
+
+#main img{
+ margin: 0.2rem;
+}
+
+#section-btn{
+    height: 10vh;
+    background-color: white;
+}
+
+h2{
+    text-align: center;
+}
+
+.section-btn__img{
+    width: 2rem;
+    margin:0 1rem;
+}
+
+#section-btn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+#section-btn__leftbtn, #section-btn__rightbtn{
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.2rem;
+}
+#section-btn__rightbtn{
+    padding: 0 1.1rem;
+}
+
+#section-btn__pages {
+    font-size: medium;
+}
+/*MAIN AND BTN SECTIONS ENDS*/
+
+/*FOOTER SECTION*/
+
+footer {
+    height: 40vh;
+    background-color: rgb(38, 39, 51);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+footer aside{
+    color: white;
+}
+
+footer aside a{
+    text-decoration: none;
+    color:rgb(75, 161, 187)
+}
+
+footer aside a:hover {
+    color:rgb(156, 237, 241);
+}
+
+footer aside h1 {
+    font-size: 4rem;
+    font-family: 'Damion', cursive;
+    margin: 0;
+}
+
+#footer-aside__contactInfo p{
+    margin: 0.4rem;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .wrapper{
+        margin: 0;
+    }
+    /* Header Section */
+    #section-header__title{
+        font-size: 2rem;
+        padding-left: 0.1rem;
+    }
+    #section-header__searchBar {
+        padding:0;
+        font-size: medium;
+    }
+    #section-header__btn {
+        font-size: medium;
+        padding: 0.3rem 0.4rem;
+    }
+
+    #section-header__searchForm{
+        padding-right: 0.2rem;
+    }
+  
+    
+    #section-header__mobile{
+        display: block;
+        font-family: 'Damion', cursive;
+        color: white;
+        font-size: 2rem;
+        margin: 0.6rem 2rem 0 0.5rem;
+        
+    }
+    #section-header__title{
+        display: none;
+    }
+        /* Header Section ENDS */
+
+    /* Modal Section */
+    #modal-bg h1{
+        font-size: small;
+    }
+    #warning{
+        width: 8rem;
+    }
+
+    #modal {
+        margin-top: 10rem;
+        padding: 10px;
+        width: 60%;
+}
+
+    /*Main and Btn Section*/
+
+    #main {
+        margin: 0 0 0rem 2rem;
+    }
+
+    #main img{
+        width: 75px;
+    }
+
+    #section-btn__rightbtn{
+        padding: 0 0 0 0.6rem;
+    }
+    .section-btn__img{
+        width: 2rem;
+        margin:0 0.8rem;
+    }   
+    h2{
+        font-size: medium;
+    }
+
+    #section-btn__leftbtn, #section-btn__rightbtn{
+        font-size: small;
+    }
+
+    .section-btn__img{
+        width: 1.3rem;
+        margin:0 0.7rem;
+    }
+
+    #modal-btn{
+        padding: 0.5rem 1rem;
+    }
+
+}
+@media only screen and (max-width: 970px) and (min-width: 770px){
+    #main {
+        margin:0 0 0 1.8rem;
+        height: 100vh;
+    }
+}
+
+/*Tablet responsive*/
+@media only screen and (max-width: 770px) and (min-width: 600px){
+
+    #section-header__title{
+        font-size: 1.8rem;
+    }
+    #main img{
+     width: 130px;
+    }
+    #main {
+        margin:0 0 0 1.8rem;
+        height: 100vh;
+    }
+    #modal-bg h1{
+        font-size:  medium;
+    }
+    #warning{
+        width: 8rem;
+    }
+
+    #modal {
+        margin-top: 5rem;
+        padding: 10px;
+        width: 60%;
+    }
+}
+
+/*small small phones ?*/
+@media only screen and (max-width: 320px) 
+{
+    .wrapper{
+        margin: 0;
+    }
+    #main {
+        margin: 0 0 0 2rem;
+    }
+    body section {
+        width: 400px;
+    }
+
+}
