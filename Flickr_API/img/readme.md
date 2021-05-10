@@ -1,8 +1,8 @@
 Using HTML, CSS ( flexbox ) and vanilla JS
 
-   *Able to search after images
-   *Shows an image gallery
-   *Working with lightboxes
-   *Working with query params
-   *JS exception handling
-   *Working with Media Querys
+   *Able to search after images<br>
+   *Shows an image gallery<br>
+   *Working with lightboxes<br>
+   *Working with query params<br>
+   *JS exception handling<br>
+   *Working with Media Querys<br>
