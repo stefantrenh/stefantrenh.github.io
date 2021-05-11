@@ -154,7 +154,7 @@ function GetBaseURLString() {
     let path = "services/rest"
     let apiKey = "api_key=5008f83a3d74f0c09567d87692c85610"
     let searchMethod = "method=flickr.photos.search" //query string
-    let baseURL = `https://${host}/${path}?${searchMethod}&${apiKey}`
+    let baseURL = `https://${host}/${path}?${searchMethod}&${apiKey}&sort=relevance`
 
     return baseURL;
 }
