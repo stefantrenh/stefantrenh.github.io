@@ -100,7 +100,7 @@ section header {
 
 /*MAIN AND BTN SECTIONS*/
 #main {
-    height:75vh;
+    height:97vh;
     flex-wrap: wrap;
     display: flex;
     margin: 0 0 2rem 2rem;
