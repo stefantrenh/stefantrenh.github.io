@@ -20,6 +20,7 @@ let imgURLArray = [];  //Img URL array, contains X urls depending on total image
 let searchFlag = 0;
 let content = document.getElementById("main")
 let jsonDataObject;
+let searchResultOutput2;
 
 
 let modal = document.getElementById("modal-bg")
@@ -31,7 +32,11 @@ let modalBtn = document.getElementById("modal-btn")
 function modalCloseBtn() {
     modal.style.display= "none";
 }
-
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  } 
 async function getSearchResult()
 {  
     let searchResultOutput = document.getElementById("section-searchInput")
@@ -117,7 +122,11 @@ function PreviousPageBtn(){
  async function ImgSearch()
 {
     let textValue = document.getElementById("section-header__searchBar").value
-    if(textValue == ""){location.reload()}
+    if(textValue == ""){
+        let showInput = document.getElementById("section-searchInput");
+        showInput.innerText = "Please fill in the search textbox"
+        searchResultPages.innerText = "0 of 0"
+    }
     let searchImgString = `${GetBaseURLString()}&text=${textValue}&${TotalImgPerPage(24)}&${jsonCallbackMethod}&${page +"="+currentPage}`
     let request = await fetch(searchImgString)
     let getData = await request.json()
@@ -154,7 +163,7 @@ function GetBaseURLString() {
     let path = "services/rest"
     let apiKey = "api_key=5008f83a3d74f0c09567d87692c85610"
     let searchMethod = "method=flickr.photos.search" //query string
-    let baseURL = `https://${host}/${path}?${searchMethod}&${apiKey}&sort=relevance`
+    let baseURL = `https://${host}/${path}?${searchMethod}&${apiKey}`
 
     return baseURL;
 }
