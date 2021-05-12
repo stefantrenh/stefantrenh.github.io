@@ -127,7 +127,7 @@ function PreviousPageBtn(){
         showInput.innerText = "Please fill in the search textbox"
         searchResultPages.innerText = "0 of 0"
     }
-    let searchImgString = `${GetBaseURLString()}&text=${textValue}&${TotalImgPerPage(24)}&${jsonCallbackMethod}&${page +"="+currentPage}`
+    let searchImgString = `${GetBaseURLString()}&text=${textValue}&${TotalImgPerPage(24)}&${jsonCallbackMethod}&${page +"="+currentPage}&sort=interestingness-desc`
     let request = await fetch(searchImgString)
     let getData = await request.json()
 
