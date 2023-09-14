@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+.content{
+    display: flex;
+}
+/*RANDOM CSS DRY*/
+.text_space {
+    letter-spacing: 3px;
+}
+.dry_2px_textmargin{
+    margin: 2px 0 2px 0;
+}
+
+/*HEADER STARTS*/
+.profile_photo {
+display: flex;
+justify-content: center;
+}
+
+#profile_photo_img {
+    height: 150px;
+    width: 150px;
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+.profession_title {
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 1rem 0 1rem 0;
+}
+
+.header_row{
+    display: flex;
+    justify-content: center;
+}
+
+.header_text_col{
+    display: flex;
+    margin: 0 2rem 0 2rem;
+}
+
+.header_col_img{
+    height: 40px;
+}
+/*HEADER ENDS*/
+
+/*MAIN CONTENT SIDE BAR STARTS*/
+
+.sidebar{
+    width: 30%;
+    margin-right: 3rem;
+    padding: 2rem;
+}
+
+.Contact_info{
+    margin: 2rem 0;
+}
+
+.sidebar_title{
+    display: flex;
+}
+
+.sidebar_title_logo{
+    margin-right: 1rem;
+    width: 35px;
+}
+
+.sidebar_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar_links a{
+    color: black;
+}
+
+.sidebar_tools_rating_text {
+    margin:0;
+}
+
+/*Sidebar rating*/
+.sidebar_tools_ratings{
+    margin:0;
+}
+
+.rating-1{
+    width: 20%;
+    display: inline-block;
+    height: 10px;
+    background-color: red;
+}
+.rating-2{
+    width: 40%;
+    display: inline-block;
+    height: 10px;
+    background-color: goldenrod;
+}
+.rating-3{
+    width: 60%;
+    display: inline-block;
+    height: 10px;
+    background-color: goldenrod;
+}
+.rating-4{
+    width: 80%;
+    display: inline-block;
+    height: 10px;
+    background-color: green;
+}
+.rating-5{
+    width: 100%;
+    display: inline-block;
+    height: 10px;
+    background-color: green;
+}
+
+.rest-value-1{
+    width: 20%;
+    display: inline-block;
+    height: 10px;
+    background-color: gray;
+}
+.rest-value-2{
+    width: 40%;
+    display: inline-block;
+    height: 10px;
+    background-color: gray;
+}
+.rest-value-3{
+    width: 60%;
+    display: inline-block;
+    height: 10px;
+    background-color: gray;
+}
+.rest-value-4{
+    width: 80%;
+    display: inline-block;
+    height: 10px;
+    background-color: gray;
+}
+
+/*Sidebar rating ends*/
+
+/*Main Content Starts*/
+
+.main-content__section{
+    padding: 0 2rem;
+    border-left-style: solid;
+    border-color: gray;
+    margin-bottom: 1rem;
+}
+
+.main-content-logo {
+    margin: 12px 5px 0 0;
+    height: 35px;
+}
+
+.main-content-title{
+    display: flex;
+    margin-top: 4rem;
+}
+.Main-Content {
+    max-width: 80%;
+}
+
+.work-exp-year-text{
+    color: gray;
+    margin:0;
+}
+
+
+@media screen and (max-width: 786px){
+
+.header_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar {
+    width: 70%;
+}
+
+.Main-Content {
+    margin-left: 2rem;
+}
+
+}
